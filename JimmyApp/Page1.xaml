@@ -5,31 +5,54 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
+            Padding="3,0"
             Spacing="25">
             <Label
-                Text="Bienvenue sur l'application"
+                Text="Welcome to your Bank"
                 FontSize="Large"
-                HorizontalOptions="Center" />
-            <Label
-                Text="Application de Jimmy"
-                FontSize="Medium"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
             <Button
                 Text="Cliquez ici pour voir un gif"
                 Clicked="Button_Clicked"
                 HorizontalOptions="Center" />
-            <HorizontalStackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
                 <Image
-                    Source="banque.png"
-                    Aspect="AspectFit" />
-                <Image
+                    Grid.Column="0"
                     Source="banqueenligne.png"
                     Aspect="AspectFit" />
-            </HorizontalStackLayout>
-            <Image
-    Source="banqueenligne.png"
-    Aspect="AspectFit" />
+
+                <Image
+                    Grid.Column="1"
+                    Source="banqueenligne.png"
+                    Aspect="AspectFit" />
+            </Grid>
+            <CarouselView IndicatorView="indicatorView">
+                    <CarouselView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Page 1</x:String>
+                            <x:String>Page 2</x:String>
+                            <x:String>Page 3</x:String>
+                        </x:Array>
+                    </CarouselView.ItemsSource>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                            <Image Source="dotnet_bot.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="200" />
+                                <Label Text="{Binding}" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold" Margin="0,0,0,250" />
+                            </Grid>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorView" Margin="5" HorizontalOptions="Center" IndicatorSize="7"  />
+
+
+
         </VerticalStackLayout>
     </ScrollView>
 

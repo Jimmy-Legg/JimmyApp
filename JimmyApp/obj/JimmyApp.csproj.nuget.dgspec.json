@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
         "projectName": "JimmyApp",
-        "projectPath": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

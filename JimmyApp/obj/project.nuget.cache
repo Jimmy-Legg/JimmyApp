@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6FUB/meYcT1x6obkkxmofpMd0QBNwqKcHUMGB0Dqf3ncOi6A4Tb6usHUfOAIhpuaddAvoMFR0mtkTMOR4xg6CA==",
+  "dgSpecHash": "ZNrLYzjYQwPIc8ErrJyogTSCSolaYd9Boms0vMpH1eNIGmgtDXSACtPKEsO50ncfhwv2lpyja9P3g86RgeyEfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
