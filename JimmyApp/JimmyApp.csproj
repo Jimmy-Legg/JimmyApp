@@ -59,6 +59,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\accueil.png" />
 	  <None Remove="Resources\Images\contact.png" />
+	  <None Remove="Resources\Images\full.gif" />
 	  <None Remove="Resources\Images\lettre.png" />
 	</ItemGroup>
 
@@ -69,6 +70,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="PageGif.xaml.cs">
+	    <DependentUpon>PageGif.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Page1.xaml.cs">
 	    <DependentUpon>Page1.xaml</DependentUpon>
 	  </Compile>
@@ -81,6 +85,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="PageGif.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Page1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -18,7 +18,10 @@ namespace JimmyApp
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddSingleton<Page1>();
+            builder.Services.AddSingleton<Page2>();
+            builder.Services.AddSingleton<Page3>();
+            builder.Services.AddSingleton<Page4>();
             return builder.Build();
         }
     }

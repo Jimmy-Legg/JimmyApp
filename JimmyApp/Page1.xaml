@@ -7,25 +7,29 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
             <Label
-                Text="Page1"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            
-
+                Text="Bienvenue sur l'application"
+                FontSize="Large"
+                HorizontalOptions="Center" />
+            <Label
+                Text="Application de Jimmy"
+                FontSize="Medium"
+                HorizontalOptions="Center" />
             <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                Text="Cliquez ici pour voir un gif"
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center" />
+            <HorizontalStackLayout>
+                <Image
+                    Source="banque.png"
+                    Aspect="AspectFit" />
+                <Image
+                    Source="banqueenligne.png"
+                    Aspect="AspectFit" />
+            </HorizontalStackLayout>
+            <Image
+    Source="banqueenligne.png"
+    Aspect="AspectFit" />
         </VerticalStackLayout>
     </ScrollView>
 

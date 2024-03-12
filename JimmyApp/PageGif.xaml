@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JimmyApp.PageGif">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="OnBackButtonClicked" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Welcome to JimmyApp"
+                FontSize="Title"
+                HorizontalOptions="Center" />
+            <Image Source="full.gif"
+                HeightRequest="200" 
+                HorizontalOptions="Center" 
+                IsAnimationPlaying="True" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

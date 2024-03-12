@@ -1040,3 +1040,8 @@ C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetize
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\contact.png
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\icon.png
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\lettre.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\banqueenligne.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\cartebancaire.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\graphique.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\loupe.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\full.gif

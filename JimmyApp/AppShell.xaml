@@ -7,7 +7,7 @@
     Shell.TabBarIsVisible="True"
     Style="{StaticResource BaseStyle}">
 
-    <Tab Title="Acceuil" Icon="acceuil.png">
+    <Tab Title="Acceuil" Icon="accueil.png">
         <ShellContent ContentTemplate="{DataTemplate local:Page1}" />
     </Tab>
 

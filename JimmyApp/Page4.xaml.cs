@@ -2,8 +2,6 @@
 {
     public partial class Page4 : ContentPage
     {
-        int count = 0;
-
         public Page4()
         {
             InitializeComponent();

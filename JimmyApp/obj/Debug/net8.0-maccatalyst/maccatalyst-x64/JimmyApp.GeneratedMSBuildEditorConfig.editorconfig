@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page4.xaml
 build_metadata.AdditionalFiles.TargetPath = Page4.xaml
 build_metadata.AdditionalFiles.RelativePath = Page4.xaml
 
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/PageGif.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.PageGif.xaml
+build_metadata.AdditionalFiles.TargetPath = PageGif.xaml
+build_metadata.AdditionalFiles.RelativePath = PageGif.xaml
+
 [C:/Users/user/source/repos/JimmyApp/JimmyApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Resources.Styles.Colors.xaml
