@@ -1036,3 +1036,7 @@ C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\stamp\_Con
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\accueil.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\contact.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\icon.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\lettre.png
