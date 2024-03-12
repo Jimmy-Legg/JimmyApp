@@ -179,3 +179,7 @@ C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\accueil.scale-100.png
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact.scale-100.png
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lettre.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\banqueenligne.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cartebancaire.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graphique.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\loupe.scale-100.png

@@ -4,8 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Style x:Key="BaseStyle" TargetType="Element">
-        <Setter Property="Shell.TabBarForegroundColor" Value="Blue" />
-        <Setter Property="Shell.TitleColor" Value="Blue" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="MediumPurple" />
         <Setter Property="Shell.TabBarUnselectedColor" Value="Gray" />
     </Style>
     <Style TargetType="ActivityIndicator">

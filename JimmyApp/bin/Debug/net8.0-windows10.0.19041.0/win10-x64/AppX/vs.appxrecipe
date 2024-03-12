@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-12T10:15:19.022</Modified>
+      <Modified>2024-03-12T10:54:49.480</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-12T10:09:35.348</Modified>
+      <Modified>2024-03-12T10:53:01.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\JimmyApp.runtimeconfig.json">
       <PackagePath>JimmyApp.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\JimmyApp.dll">
       <PackagePath>JimmyApp.dll</PackagePath>
-      <Modified>2024-03-12T10:15:18.520</Modified>
+      <Modified>2024-03-12T10:54:48.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>JimmyApp.exe</PackagePath>
-      <Modified>2024-03-12T10:15:18.528</Modified>
+      <Modified>2024-03-12T10:54:48.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -269,29 +269,41 @@
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2024-03-06T15:15:41.811</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\banqueenligne.scale-100.png">
+      <PackagePath>banqueenligne.scale-100.png</PackagePath>
+      <Modified>2024-03-12T10:39:50.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cartebancaire.scale-100.png">
+      <PackagePath>cartebancaire.scale-100.png</PackagePath>
+      <Modified>2024-03-12T10:38:06.077</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact.scale-100.png">
       <PackagePath>contact.scale-100.png</PackagePath>
       <Modified>2024-03-12T09:57:13.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-03-12T09:57:28.158</Modified>
+      <Modified>2024-03-12T10:50:57.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-03-12T09:57:28.181</Modified>
+      <Modified>2024-03-12T10:50:57.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-03-12T09:57:28.202</Modified>
+      <Modified>2024-03-12T10:50:57.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-03-12T09:57:28.233</Modified>
+      <Modified>2024-03-12T10:50:57.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-03-12T09:57:28.328</Modified>
+      <Modified>2024-03-12T10:50:57.548</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graphique.scale-100.png">
+      <PackagePath>graphique.scale-100.png</PackagePath>
+      <Modified>2024-03-12T10:35:48.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon.scale-100.png">
       <PackagePath>icon.scale-100.png</PackagePath>
@@ -301,9 +313,13 @@
       <PackagePath>lettre.scale-100.png</PackagePath>
       <Modified>2024-03-12T09:56:46.918</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\loupe.scale-100.png">
+      <PackagePath>loupe.scale-100.png</PackagePath>
+      <Modified>2024-03-12T10:37:14.351</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\JimmyApp.deps.json">
       <PackagePath>JimmyApp.deps.json</PackagePath>
-      <Modified>2024-03-12T10:09:35.042</Modified>
+      <Modified>2024-03-12T10:53:01.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
