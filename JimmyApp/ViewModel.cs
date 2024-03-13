@@ -16,20 +16,20 @@ namespace JimmyApp
         {
             CarouselItems.Add(new CarouselItem
             {
-                Title = "Title 1",
-                Description = "Description 1",
+                Title = "Banks",
+                Description = "Here you can see a bank !",
                 Image = "image1.png"
             });
             CarouselItems.Add(new CarouselItem
             {
-                Title = "Title 2",
-                Description = "Description 2",
+                Title = "Profit",
+                Description = "How can you earn money ?",
                 Image = "image2.png"
             });
             CarouselItems.Add(new CarouselItem
             {
-                Title = "Title 3",
-                Description = "Description 3",
+                Title = "Cash",
+                Description = "Cash is good !",
                 Image = "image3.png"
             });
         }
