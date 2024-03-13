@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZNrLYzjYQwPIc8ErrJyogTSCSolaYd9Boms0vMpH1eNIGmgtDXSACtPKEsO50ncfhwv2lpyja9P3g86RgeyEfg==",
+  "dgSpecHash": "TgTg+MOFfP6XhIdjqd7e/xcJa1f1mwor7cDPneuqae+3s1bEXO5y5ond0PLovJ9BboYG9Cw1euphT33lBgZRvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

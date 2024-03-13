@@ -57,10 +57,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\eduardo-soares-utWyPB8_FU8-unsplash.png" />
-	  <MauiImage Remove="Resources\Images\Image1.png" />
-	  <MauiImage Remove="Resources\Images\Image2.png" />
-	  <MauiImage Remove="Resources\Images\Image3.png" />
 	  <MauiImage Remove="Resources\Images\ImageBa.png" />
 	  <MauiImage Remove="Resources\Images\ImageBe.png" />
 	  <MauiImage Remove="Resources\Images\ImageBi.png" />
@@ -68,12 +64,12 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\accueil.png" />
+	  <None Remove="Resources\Images\bank.jpg" />
 	  <None Remove="Resources\Images\contact.png" />
-	  <None Remove="Resources\Images\eduardo-soares-utWyPB8_FU8-unsplash.png" />
 	  <None Remove="Resources\Images\full.gif" />
-	  <None Remove="Resources\Images\Image1.png" />
-	  <None Remove="Resources\Images\Image2.png" />
-	  <None Remove="Resources\Images\Image3.png" />
+	  <None Remove="Resources\Images\image1.png" />
+	  <None Remove="Resources\Images\image2.png" />
+	  <None Remove="Resources\Images\image3.png" />
 	  <None Remove="Resources\Images\ImageBa.png" />
 	  <None Remove="Resources\Images\ImageBe.png" />
 	  <None Remove="Resources\Images\ImageBi.png" />
@@ -81,13 +77,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="Resources\Images\eduardo-soares-utWyPB8_FU8-unsplash.png" />
-	  <Content Include="Resources\Images\Image1.png" />
-	  <Content Include="Resources\Images\Image2.png" />
-	  <Content Include="Resources\Images\Image3.png" />
-	</ItemGroup>
-
-	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />

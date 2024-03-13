@@ -2093,3 +2093,9 @@ C:\Users\user\Source\Repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\stamp\_C
 C:\Users\user\Source\Repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\user\Source\Repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\user\Source\Repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\user\source\repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\user\source\repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.pdb
+C:\Users\user\source\repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\bank.jpg
+C:\Users\user\source\repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\image1.png
+C:\Users\user\source\repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\image2.png
+C:\Users\user\source\repos\Jimmy_MAUI\JimmyApp\obj\Debug\net8.0-android\resizetizer\r\drawable\image3.png

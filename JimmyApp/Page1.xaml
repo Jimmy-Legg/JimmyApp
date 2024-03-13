@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="JimmyApp.Page1">
+             x:Class="JimmyApp.Page1"
+             xmlns:viewmodel="clr-namespace:JimmyApp"
+             xmlns:local="clr-namespace:JimmyApp;assembly=JimmyApp"
+             Title="Page1"
+             x:DataType="viewmodel:ViewModel">
 
     <ScrollView>
         <VerticalStackLayout
@@ -32,27 +36,25 @@
                     Source="banqueenligne.png"
                     Aspect="AspectFit" />
             </Grid>
-            <CarouselView IndicatorView="indicatorView">
-                    <CarouselView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Page 1</x:String>
-                            <x:String>Page 2</x:String>
-                            <x:String>Page 3</x:String>
-                        </x:Array>
-                    </CarouselView.ItemsSource>
+            <StackLayout Padding="10">
+                <CarouselView IndicatorView="indicatorView" ItemsSource="{Binding CarouselItems}" >
                     <CarouselView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                            <Image Source="dotnet_bot.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="200" />
-                                <Label Text="{Binding}" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold" Margin="0,0,0,250" />
-                            </Grid>
+                        <DataTemplate x:DataType="local:CarouselItem">
+                            <StackLayout>
+                                <Label Text="{Binding Title}" FontSize="Title" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <Image Source="{Binding Image}" Aspect="AspectFit" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand"/>
+                                <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding Description}" FontSize="Default" HorizontalOptions="Center" VerticalOptions="Center" />
+                                </StackLayout>
+                            </StackLayout>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
-            </CarouselView>
+                </CarouselView>
+            </StackLayout>
+
+
+
             <IndicatorView x:Name="indicatorView" Margin="5" HorizontalOptions="Center" IndicatorSize="7"  />
-
-
-
         </VerticalStackLayout>
     </ScrollView>
 
