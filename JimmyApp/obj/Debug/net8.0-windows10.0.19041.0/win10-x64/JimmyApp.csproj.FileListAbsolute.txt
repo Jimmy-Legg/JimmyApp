@@ -183,3 +183,13 @@ C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cartebancaire.scale-100.png
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\graphique.scale-100.png
 C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\loupe.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\image1.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bank.scale-100.jpg
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\full.scale-100.gif
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\image2.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\image3.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\JimmyApp.sourcelink.json
+C:\Users\user\source\repos\JimmyApp\JimmyApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\erreur.scale-100.png
+C:\Users\user\source\repos\JimmyApp\JimmyApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\error.scale-100.png

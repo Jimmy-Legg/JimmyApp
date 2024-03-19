@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj": {}
+    "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj": {
+    "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj",
         "projectName": "JimmyApp",
-        "projectPath": "C:\\Users\\user\\source\\repos\\Jimmy_MAUI\\JimmyApp\\JimmyApp.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\JimmyApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\Jimmy_MAUI\\JimmyApp\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\JimmyApp\\JimmyApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -87,6 +87,10 @@
               "target": "Package",
               "version": "[8.0.2, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -134,6 +138,10 @@
               "target": "Package",
               "version": "[8.0.2, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -181,6 +189,10 @@
               "target": "Package",
               "version": "[8.0.2, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -223,6 +235,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

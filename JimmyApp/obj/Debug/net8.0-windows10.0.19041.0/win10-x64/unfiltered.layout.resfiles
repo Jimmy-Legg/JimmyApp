@@ -47,6 +47,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+bank.scale-100.jpg
 banqueenligne.scale-100.png
 cartebancaire.scale-100.png
 contact.scale-100.png
@@ -55,8 +56,14 @@ dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+erreur.scale-100.png
+error.scale-100.png
+full.scale-100.gif
 graphique.scale-100.png
 icon.scale-100.png
+image1.scale-100.png
+image2.scale-100.png
+image3.scale-100.png
 lettre.scale-100.png
 loupe.scale-100.png
 splashSplashScreen.scale-100.png

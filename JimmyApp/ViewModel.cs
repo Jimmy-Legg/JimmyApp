@@ -17,7 +17,7 @@ namespace JimmyApp
             CarouselItems.Add(new CarouselItem
             {
                 Title = "Banks",
-                Description = "Here you can see a bank !",
+                Description = "Here you can see a bank ! ",
                 Image = "image1.png"
             });
             CarouselItems.Add(new CarouselItem

@@ -4,7 +4,7 @@
              x:Class="JimmyApp.Page1"
              xmlns:viewmodel="clr-namespace:JimmyApp"
              xmlns:local="clr-namespace:JimmyApp;assembly=JimmyApp"
-             Title="Page1"
+             Title="Your Bank"
              x:DataType="viewmodel:ViewModel">
 
     <ScrollView>

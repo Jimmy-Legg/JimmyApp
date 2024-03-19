@@ -66,6 +66,8 @@
 	  <None Remove="Resources\Images\accueil.png" />
 	  <None Remove="Resources\Images\bank.jpg" />
 	  <None Remove="Resources\Images\contact.png" />
+	  <None Remove="Resources\Images\erreur.png" />
+	  <None Remove="Resources\Images\error.png" />
 	  <None Remove="Resources\Images\full.gif" />
 	  <None Remove="Resources\Images\image1.png" />
 	  <None Remove="Resources\Images\image2.png" />
@@ -81,6 +83,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -99,6 +102,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="BeerDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PageGif.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
