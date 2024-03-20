@@ -87,6 +87,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Page2\CreatedBeer.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
 	  <Compile Update="PageGif.xaml.cs">
 	    <DependentUpon>PageGif.xaml</DependentUpon>
 	  </Compile>

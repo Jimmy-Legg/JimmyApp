@@ -1,3 +1,5 @@
+
+
 namespace JimmyApp;
 public partial class BeerDetailsPage : ContentPage
 {
