@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appiconfg.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -65,7 +65,10 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\accueil.png" />
 	  <None Remove="Resources\Images\bank.jpg" />
+	  <None Remove="Resources\Images\beerhalfone.png" />
+	  <None Remove="Resources\Images\beerhalftwo.png" />
 	  <None Remove="Resources\Images\contact.png" />
+	  <None Remove="Resources\Images\defaultbeerimage.png" />
 	  <None Remove="Resources\Images\erreur.png" />
 	  <None Remove="Resources\Images\error.png" />
 	  <None Remove="Resources\Images\full.gif" />
@@ -87,6 +90,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="BeerDetailPage - Copier.xaml.cs">
+	    <DependentUpon>%(Filename)</DependentUpon>
+	  </Compile>
 	  <Compile Update="Page2\CreatedBeer.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
@@ -105,6 +111,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="BeerDetailPage - Copier.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="BeerDetailPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

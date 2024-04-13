@@ -4,8 +4,7 @@
              x:Class="JimmyApp.Page1"
              xmlns:viewmodel="clr-namespace:JimmyApp"
              xmlns:local="clr-namespace:JimmyApp;assembly=JimmyApp"
-             Title="Your Bank"
-             x:DataType="viewmodel:ViewModel">
+             Title="Your Bank">
 
     <ScrollView>
         <VerticalStackLayout
@@ -28,14 +27,18 @@
 
                 <Image
                     Grid.Column="0"
-                    Source="banqueenligne.png"
-                    Aspect="AspectFit" />
+                    Source="beerhalfone.png"
+                    Aspect="AspectFit"
+                    Margin="0,0,1,0" />
+
 
                 <Image
                     Grid.Column="1"
-                    Source="banqueenligne.png"
-                    Aspect="AspectFit" />
+                    Source="beerhalftwo.png"
+                    Aspect="AspectFit"
+                    Margin="1,0,0,0" />
             </Grid>
+
             <StackLayout Padding="10">
                 <CarouselView IndicatorView="indicatorView" ItemsSource="{Binding CarouselItems}" >
                     <CarouselView.ItemTemplate>

@@ -1,11 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Collections.Generic;
 
 namespace JimmyApp
 {
@@ -13,41 +14,56 @@ namespace JimmyApp
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private List<Beer> _beers;
-        private List<Beer> _renderingBeers;
-        private int _itemsToAdd = 10;
+        private ObservableCollection<Beer> _beers;
         private bool _isLoading;
         private bool _isLoaded;
         private Beer _selectedBeer;
 
-        public List<Beer> Beers { get => _beers; set { _beers = value; OnPropertyChanged(nameof(Beers)); } }
-        public List<Beer> RenderingBeers { get => _renderingBeers; set { _renderingBeers = value; OnPropertyChanged(nameof(RenderingBeers)); } }
-        public int ItemsToAdd { get => _itemsToAdd; set { _itemsToAdd = value; OnPropertyChanged(nameof(ItemsToAdd)); } }
+        public ObservableCollection<Beer> Beers
+        {
+            get => _beers;
+            set
+            {
+                _beers = value;
+                OnPropertyChanged(nameof(Beers));
+            }
+        }
+
         public bool IsLoading { get => _isLoading; set { _isLoading = value; OnPropertyChanged(nameof(IsLoading)); } }
         public bool IsLoaded { get => _isLoaded; set { _isLoaded = value; OnPropertyChanged(nameof(IsLoaded)); } }
 
-        public Beer SelectedBeer { get => _selectedBeer; set { _selectedBeer = value; OnPropertyChanged(nameof(SelectedBeer)); OnPropertyChanged(nameof(IsBeerSelected)); } }
+        public Beer SelectedBeer
+        {
+            get => _selectedBeer;
+            set
+            {
+                _selectedBeer = value;
+                OnPropertyChanged(nameof(SelectedBeer));
+                OnPropertyChanged(nameof(IsBeerSelected));
+            }
+        }
 
         public bool IsBeerSelected => SelectedBeer != null;
-        public ICommand LoadMoreCommand { get; }
 
         public MainViewModelPage2()
         {
-            // Initialize the command
-            LoadMoreCommand = new Command(ExecuteLoadMoreCommand);
-
-            RenderingBeers = new List<Beer>();
+            Beers = new ObservableCollection<Beer>();
             Task.Run(async () => await InitializeDataAsync());
         }
 
-        // Command execution logic
-        private async void ExecuteLoadMoreCommand()
+        public void AddBeer(int id, string name, string price, string image, double average, int reviews)
         {
-            // Increase the number of items to add by 10
-            ItemsToAdd += 10;
+            var newBeer = new Beer { Id = id, Name = name, Price = price, Image = image, Average = average, Reviews = reviews };
+            Beers.Add(newBeer);
+            OnPropertyChanged(nameof(Beers));
+        }
 
-            // Load more data
-            await InitializeDataAsync();
+        public void PrintBeers()
+        {
+            foreach (var beer in Beers)
+            {
+                Console.WriteLine($"ID: {beer.Id}, Name: {beer.Name}, Price: {beer.Price}, Image: {beer.Image}, Average: {beer.Average}, Reviews: {beer.Reviews}");
+            }
         }
 
         private async Task InitializeDataAsync()
@@ -60,17 +76,23 @@ namespace JimmyApp
                 using (var client = new HttpClient())
                 {
                     var response = await client.GetStringAsync("https://api.sampleapis.com/beers/ale");
-                    var beerData = JsonConvert.DeserializeObject<List<Beer>>(response).GetRange(0, ItemsToAdd);
+                    var beerData = JsonConvert.DeserializeObject<List<Beer>>(response).GetRange(0, 10);
 
                     await FetchBeerDetailsAsync(client, beerData);
 
-                    Beers = beerData;
-                    RenderingBeers = Beers;
+                    foreach (var beer in beerData)
+                    {
+                        if (string.IsNullOrEmpty(beer.Image))
+                        {
+                            beer.Image = "defaultbeerimage.png";
+                        }
+                    }
+
+                    Beers = new ObservableCollection<Beer>(beerData);
                 }
             }
             catch (Exception ex)
             {
-                // Handle exceptions here
                 Console.WriteLine($"Error: {ex.Message}");
             }
             finally
@@ -93,19 +115,32 @@ namespace JimmyApp
                     beer.Average = detailData.rating.average;
                     beer.Reviews = detailData.rating.reviews;
                     beer.Image = detailData.image;
+
+                    if (string.IsNullOrEmpty(beer.Image))
+                    {
+                        beer.Image = "defaultbeerimage.png";
+                    }
+                    else
+                    {
+                        // Check if the image URL returns an error
+                        var imageResponse = await client.GetAsync(beer.Image);
+                        if (!imageResponse.IsSuccessStatusCode)
+                        {
+                            beer.Image = "defaultbeerimage.png";
+                        }
+                    }
                 }
             }
             catch (Exception ex)
             {
-                // Handle exceptions for individual beer detail fetch
                 Console.WriteLine($"Error fetching details: {ex.Message}");
             }
         }
+
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
     }
 }

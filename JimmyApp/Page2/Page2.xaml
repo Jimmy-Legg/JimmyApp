@@ -10,31 +10,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ListView ItemsSource="{Binding CreatedBeer}" RowHeight="100">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell Tapped="ViewCell_Tapped">
-                            <Grid Padding="10">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-
-                                <Image Source="{Binding Image}" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
-
-                                <StackLayout Grid.Column="1" Padding="10" VerticalOptions="Center">
-                                    <Label Text="{Binding Name}" FontAttributes="Bold" />
-                                    <Label Text="{Binding Price}" />
-                                    <Label Text="{Binding Average, StringFormat='Average Rating: {0:F2}'}" />
-                                    <Label Text="{Binding Reviews, StringFormat='Number of Reviews: {0}'}" />
-                                </StackLayout>
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-
-            <ListView ItemsSource="{Binding Beers}" RowHeight="100">
+            <ListView x:Name="beersListView" ItemsSource="{Binding Beers}" RowHeight="100">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Tapped="ViewCell_Tapped">
@@ -69,7 +45,6 @@
                 <Label Text="{Binding SelectedBeer.Average, StringFormat='Average Rating: {0:F2}'}" />
                 <Label Text="{Binding SelectedBeer.Reviews, StringFormat='Number of Reviews: {0}'}" />
             </StackLayout>
-            <Button Text="Load More" Command="{Binding LoadMoreCommand}" Grid.Row="1" HorizontalOptions="Center" Margin="10" IsVisible="{Binding IsLoaded}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -9,6 +9,8 @@
 			<Label Text="{Binding Price}" />
 			<Label Text="{Binding Average, StringFormat='Average Rating: {0:F2}'}" />
 			<Label Text="{Binding Reviews, StringFormat='Number of Reviews: {0}'}" />
-		</StackLayout>
+            <Button Text="Modify" Clicked="Modify_Clicked" />
+
+        </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

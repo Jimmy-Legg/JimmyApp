@@ -9,12 +9,14 @@
             Spacing="25">
 
             <Label
-                Text="Welcome to JimmyApp"
+                Text="Voici un gif"
                 FontSize="Title"
                 HorizontalOptions="Center" />
             <Image Source="full.gif"
                 HeightRequest="200" 
                 HorizontalOptions="Center" 
+                 x:Name="gif"
+                
                 IsAnimationPlaying="True" />
 
         </VerticalStackLayout>

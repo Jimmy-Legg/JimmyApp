@@ -1,69 +1,92 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using Microsoft.Maui.Storage;
+
 
 namespace JimmyApp
 {
     public partial class Page3 : ContentPage
     {
-        Page3ViewModel viewModel;
+        MainViewModelPage2 mainViewModel;
+        public event EventHandler<Beer> BeerAdded;
+        private string _imagePath;
 
         public Page3()
         {
             InitializeComponent();
-            viewModel = new Page3ViewModel();
-            BindingContext = viewModel;
-        }
-        private void AddBeer_Clicked(object sender, EventArgs e)
-        {
-            viewModel.AddBeer(beerNameEntry.Text, priceEntry.Text);
-            beerNameEntry.Text = "";
-            priceEntry.Text = "";
+            mainViewModel = ((AppShell)Application.Current.MainPage).BindingContext as MainViewModelPage2;
+            BindingContext = mainViewModel;
         }
 
-    }
-
-    public class Page3ViewModel : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private ObservableCollection<CreatedBeer> _beerList;
-
-        public ObservableCollection<CreatedBeer> BeerList
+        private async void PickImage_Clicked(object sender, EventArgs e)
         {
-            get { return _beerList; }
-            set
+            PickOptions options = new PickOptions
             {
-                _beerList = value;
-                OnPropertyChanged(nameof(BeerList));
+                PickerTitle = "Select an image",
+                FileTypes = FilePickerFileType.Images
+            };
+
+            FileResult result = await FilePicker.Default.PickAsync(options);
+            Console.WriteLine("Result: " + result);
+            if (result != null)
+            {
+                _imagePath = result.FullPath;
+                imagePathLabel.Text = $"Selected image path: {_imagePath}";
+
             }
         }
 
-        public Page3ViewModel()
-        {
-            BeerList = new ObservableCollection<CreatedBeer>();
-        }
 
-        public void AddBeer(string name, string price)
+
+        private void AddBeer_Clicked(object sender, EventArgs e)
         {
-            Random rand = new Random();
-            var newBeer = new CreatedBeer
+            string name = beerNameEntry.Text;
+            string price = priceEntry.Text;
+
+            if (string.IsNullOrWhiteSpace(name))
             {
-                Id = rand.Next(),
-                Name = name,
-                Price = price,
-                Image = "beer.png",
-                Average = 0,
-                Reviews = 0 
-            };
+                DisplayAlert("Error", "Beer name is required", "OK");
+                return;
+            }
 
-            // Add the new beer to the top of the list
-            BeerList.Insert(0, newBeer);
+            if (string.IsNullOrWhiteSpace(price))
+            {
+                DisplayAlert("Error", "Price is required", "OK");
+                return;
+            }
+
+            if (!double.TryParse(price, out double priceValue))
+            {
+                DisplayAlert("Error", "Price should be a valid number", "OK");
+                return;
+            }
+
+            int id = mainViewModel.Beers.Count + 1;
+            string image = _imagePath;
+            double average = 0;
+            int reviews = 0;
+
+            // Set default beer image if the image path is empty
+            if (string.IsNullOrEmpty(image))
+            {
+                image = "defaultbeerimage.png";
+            }
+
+            var newBeer = new Beer { Id = id, Name = name, Price = "$" + priceValue.ToString(), Image = image, Average = average, Reviews = reviews };
+            mainViewModel.AddBeer(id, name, priceValue.ToString(), image, average, reviews);
+
+            var appShell = (AppShell)Application.Current.MainPage;
+            appShell.NewBeer = newBeer;
+
+            beerNameEntry.Text = "";
+            priceEntry.Text = "";
+            _imagePath = null;
+
+            imagePathLabel.Text = "";
         }
 
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+
     }
 
 }

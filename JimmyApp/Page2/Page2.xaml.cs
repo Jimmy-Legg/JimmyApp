@@ -11,11 +11,26 @@ namespace JimmyApp
 {
     public partial class Page2 : ContentPage
     {
+        MainViewModelPage2 mainViewModel;
+
         public Page2()
         {
             InitializeComponent();
-            BindingContext = new MainViewModelPage2();
+            mainViewModel = ((AppShell)Application.Current.MainPage).BindingContext as MainViewModelPage2;
+            BindingContext = mainViewModel;
+
+            mainViewModel.PropertyChanged += (sender, e) =>
+            {
+
+                mainViewModel.PrintBeers();
+                if (e.PropertyName == nameof(MainViewModelPage2.Beers))
+                {
+                    beersListView.ItemsSource = mainViewModel.Beers;
+                }
+            };
+
         }
+        
         private async void ViewCell_Tapped(object sender, EventArgs e)
         {
             var viewCell = (ViewCell)sender;
@@ -27,8 +42,5 @@ namespace JimmyApp
                 BindingContext = beer
             });
         }
-
     }
-
-    
 }

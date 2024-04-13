@@ -11,5 +11,13 @@
         {
             await Navigation.PopAsync();
         }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await Task.Delay(100);
+            gif.IsAnimationPlaying = false;
+            await Task.Delay(100);
+            gif.IsAnimationPlaying = true;
+        }
     }
 }
