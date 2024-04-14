@@ -1,70 +1,52 @@
-﻿using System;
-using System.Net.Http;
-using Newtonsoft.Json;
-using Microsoft.Maui.Controls;
+﻿using Microsoft.Maui.Controls;
+using JimmyApp.ViewModels;
+using System;
 
 namespace JimmyApp
 {
     public partial class Page4 : ContentPage
     {
-        private const string ApiUrl = "https://api.sampleapis.com/beers/ale";
-        private readonly HttpClient _httpClient;
-        private readonly Random _random;
+        private Page4ViewModel _viewModel;
+        private MainViewModelPage2 _mainViewModel;
 
         public Page4()
         {
             InitializeComponent();
-            _httpClient = new HttpClient();
-            _random = new Random();
+            _viewModel = new Page4ViewModel();
+            _mainViewModel = ((AppShell)Application.Current.MainPage).BindingContext as MainViewModelPage2;
+            BindingContext = _viewModel;
         }
 
         private async void GenerateBeer_Clicked(object sender, EventArgs e)
         {
-            try
+            var selectedBeer = await _viewModel.GenerateRandomBeerAsync();
+
+            if (selectedBeer != null)
             {
-                var response = await _httpClient.GetStringAsync(ApiUrl);
-                var beers = JsonConvert.DeserializeObject<List<Beer>>(response);
-
-                int randomIndex = _random.Next(beers.Count);
-
-                var selectedBeer = beers[randomIndex];
-
-                bool isImageAccessible = await IsImageAccessible(selectedBeer.Image);
-
-                if (isImageAccessible)
-                {
-                     beerImage.Source = selectedBeer.Image;
-                }
-                else
-                {
-                    beerImage.Source = "defaultbeerimage.png";
-                }
-
                 beerName.Text = $"Nom: {selectedBeer.Name}";
                 beerPrice.Text = $"Prix: {selectedBeer.Price}";
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error fetching random beer: {ex.Message}");
+                beerImage.Source = selectedBeer.Image;
             }
         }
 
-        private async Task<bool> IsImageAccessible(string imageUrl)
+        private void AddToFavorites_Clicked(object sender, EventArgs e)
         {
-            try
+            if (_viewModel.SelectedBeer != null)
             {
-                var response = await _httpClient.SendAsync(new HttpRequestMessage(HttpMethod.Head, imageUrl));
+                _mainViewModel.AddBeer(
+                    _viewModel.SelectedBeer.Id,
+                    _viewModel.SelectedBeer.Name,
+                    _viewModel.SelectedBeer.Price,
+                    _viewModel.SelectedBeer.Image,
+                    _viewModel.SelectedBeer.Average,
+                    _viewModel.SelectedBeer.Reviews);
 
-                return response.IsSuccessStatusCode;
+                DisplayAlert("Success", "Beer added to favorites!", "OK");
             }
-            catch (HttpRequestException)
+            else
             {
-                return false;
+                DisplayAlert("Error", "No beer selected!", "OK");
             }
         }
-
-
-
-
     }
 }

@@ -1,13 +1,15 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JimmyApp.Page3">
-    <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Entry x:Name="beerNameEntry" Placeholder="Nom de la bière" />
-            <Entry x:Name="priceEntry" Placeholder="Prix" />
-            <Button Text="Choisir une image " Clicked="PickImage_Clicked" />
-            <Label x:Name="imagePathLabel" />
-            <Button Text="Ajouter une Bière" Clicked="AddBeer_Clicked" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <StackLayout Padding="20">
+        <Entry Placeholder="Beer Name" Text="{Binding BeerName}" />
+        <Entry Placeholder="Price" Text="{Binding Price}" Keyboard="Numeric" />
+
+        <Button Text="Pick Image" Command="{Binding PickImageCommand}" />
+        <Label Text="{Binding ImagePath}" />
+
+        <Button Text="Add Beer" Command="{Binding AddBeerCommand}" />
+    </StackLayout>
+
 </ContentPage>

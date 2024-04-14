@@ -14,6 +14,7 @@
         <Label x:Name="beerPrice" Text="Prix: -" FontSize="Medium" />
 
         <Button Text="Générer une bière" Clicked="GenerateBeer_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Button Text="Ajouter aux favoris" Clicked="AddToFavorites_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>
