@@ -64,6 +64,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\accueil.png" />
+	  <None Remove="Resources\Images\ajout.png" />
 	  <None Remove="Resources\Images\bank.jpg" />
 	  <None Remove="Resources\Images\beerhalfone.png" />
 	  <None Remove="Resources\Images\beerhalftwo.png" />
@@ -79,6 +80,8 @@
 	  <None Remove="Resources\Images\ImageBe.png" />
 	  <None Remove="Resources\Images\ImageBi.png" />
 	  <None Remove="Resources\Images\lettre.png" />
+	  <None Remove="Resources\Images\liste.png" />
+	  <None Remove="Resources\Images\random.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -114,7 +117,7 @@
 	  <MauiXaml Update="BeerDetailPage - Copier.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="BeerDetailPage.xaml">
+	  <MauiXaml Update="Page2\BeerDetailPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PageGif.xaml">
@@ -129,6 +132,11 @@
 	  <MauiXaml Update="Page4.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="NewFolder1\" />
+	  <Folder Include="NewFolder\" />
 	</ItemGroup>
 
 </Project>

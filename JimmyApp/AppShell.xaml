@@ -11,15 +11,15 @@
         <ShellContent ContentTemplate="{DataTemplate local:Page1}" />
     </Tab>
 
-    <Tab Title="Finances" Icon="graphique.png">
+    <Tab Title="Bières" Icon="liste.png">
         <ShellContent ContentTemplate="{DataTemplate local:Page2}" />
     </Tab>
 
-    <Tab Title="Découvrir" Icon="loupe.png">
+    <Tab Title="Ajouter" Icon="ajout.png">
         <ShellContent ContentTemplate="{DataTemplate local:Page3}" />
     </Tab>
 
-    <Tab Title="Cartes" Icon="cartebancaire.png">
+    <Tab Title="Découvrir" Icon="random.png">
         <ShellContent ContentTemplate="{DataTemplate local:Page4}" />
     </Tab>
 

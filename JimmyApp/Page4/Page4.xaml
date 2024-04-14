@@ -1,0 +1,19 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JimmyApp.Page4"
+             Title="Beer Generator">
+
+    <StackLayout Padding="20" Spacing="20">
+        <Label Text="Envie de changements ?" FontSize="Large" HorizontalOptions="Center" />
+
+        <Label Text="Cliquez sur le bouton pour générer une bière aléatoire depuis l'API !" FontSize="Medium" />
+
+        <Image x:Name="beerImage" Source="beer_placeholder.png" Aspect="AspectFit" HeightRequest="200" />
+
+        <Label x:Name="beerName" Text="Nom: -" FontSize="Medium" />
+        <Label x:Name="beerPrice" Text="Prix: -" FontSize="Medium" />
+
+        <Button Text="Générer une bière" Clicked="GenerateBeer_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>

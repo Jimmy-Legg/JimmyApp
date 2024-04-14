@@ -122,7 +122,6 @@ namespace JimmyApp
                     }
                     else
                     {
-                        // Check if the image URL returns an error
                         var imageResponse = await client.GetAsync(beer.Image);
                         if (!imageResponse.IsSuccessStatusCode)
                         {

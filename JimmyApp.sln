@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JimmyApp", "JimmyApp\JimmyApp.csproj", "{946EF0D4-FDF9-41CE-873C-DFC826224597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JimmyApp", "JimmyApp\JimmyApp.csproj", "{946EF0D4-FDF9-41CE-873C-DFC826224597}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{B69E47D0-B92E-47B9-B2A7-DEA18678C0D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -24,23 +24,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/user/source/repos/JimmyApp/JimmyApp/BeerDetailPage.xaml]
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page1/Page1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.BeerDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = BeerDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = BeerDetailPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page1.Page1.xaml
+build_metadata.AdditionalFiles.TargetPath = Page1\Page1.xaml
+build_metadata.AdditionalFiles.RelativePath = Page1\Page1.xaml
 
-[C:/Users/user/source/repos/JimmyApp/JimmyApp/ModifyBeerPage.xaml]
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page1/PageGif.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.ModifyBeerPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ModifyBeerPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ModifyBeerPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page1.PageGif.xaml
+build_metadata.AdditionalFiles.TargetPath = Page1\PageGif.xaml
+build_metadata.AdditionalFiles.RelativePath = Page1\PageGif.xaml
 
-[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page1.xaml]
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page2/BeerDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page1.xaml
-build_metadata.AdditionalFiles.TargetPath = Page1.xaml
-build_metadata.AdditionalFiles.RelativePath = Page1.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page2.BeerDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Page2\BeerDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Page2\BeerDetailPage.xaml
+
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page2/ModifyBeerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page2.ModifyBeerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Page2\ModifyBeerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Page2\ModifyBeerPage.xaml
 
 [C:/Users/user/source/repos/JimmyApp/JimmyApp/Page2/Page2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -48,23 +54,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page2.Page2.xaml
 build_metadata.AdditionalFiles.TargetPath = Page2\Page2.xaml
 build_metadata.AdditionalFiles.RelativePath = Page2\Page2.xaml
 
-[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page3.xaml]
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page3/Page3.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page3.xaml
-build_metadata.AdditionalFiles.TargetPath = Page3.xaml
-build_metadata.AdditionalFiles.RelativePath = Page3.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page3.Page3.xaml
+build_metadata.AdditionalFiles.TargetPath = Page3\Page3.xaml
+build_metadata.AdditionalFiles.RelativePath = Page3\Page3.xaml
 
-[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page4.xaml]
+[C:/Users/user/source/repos/JimmyApp/JimmyApp/Page4/Page4.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page4.xaml
-build_metadata.AdditionalFiles.TargetPath = Page4.xaml
-build_metadata.AdditionalFiles.RelativePath = Page4.xaml
-
-[C:/Users/user/source/repos/JimmyApp/JimmyApp/PageGif.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.PageGif.xaml
-build_metadata.AdditionalFiles.TargetPath = PageGif.xaml
-build_metadata.AdditionalFiles.RelativePath = PageGif.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimmyApp.Page4.Page4.xaml
+build_metadata.AdditionalFiles.TargetPath = Page4\Page4.xaml
+build_metadata.AdditionalFiles.RelativePath = Page4\Page4.xaml
 
 [C:/Users/user/source/repos/JimmyApp/JimmyApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
