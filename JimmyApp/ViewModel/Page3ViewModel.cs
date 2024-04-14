@@ -113,7 +113,7 @@ namespace JimmyApp.ViewModels
             appShell.NewBeer = newBeer;
 
             BeerName = "";
-            Price = "$";
+            Price = "";
             ImagePath = "";
         }
     }
